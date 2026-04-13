@@ -9,9 +9,9 @@ export const metadata = {
 const AppsPage = () => {
   return (
     <div>
-      <TrendingApps />
+      <TrendingApps from="apps" />
     </div>
   );
 };
 
-export default page;
+export default AppsPage;
