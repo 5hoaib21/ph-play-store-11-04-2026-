@@ -1,9 +1,17 @@
-import React from 'react';
+import Link from "next/link";
+import React from "react";
+import { TiArrowBackOutline } from "react-icons/ti";
 
 const NotFoundPage = () => {
   return (
-    <div className='h- h-screen bg-purple-300 flex  items-center justify-center font-bold text-5xl text-black'>
+    <div className="h-screen bg-purple-300 flex  items-center justify-center font-bold text-5xl text-black flex-col">
       this page is not found..!
+      <Link href={"/"}>
+        {" "}
+        <button className="btn btn-accent bg-black text-white rounded-2xl">
+          <TiArrowBackOutline /> Back to Home
+        </button>
+      </Link>
     </div>
   );
 };
